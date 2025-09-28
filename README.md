@@ -3,15 +3,15 @@
 This is a small test assessment project built for event management.  
 The app lets you:
 
-- Create an event ✍️
-- View all events 📋
-- Filter events by title 🔎
-- Fetch a single event by its ID 🆔
+- Create an event 
+- View all events 
+- Filter events by title 
+- Fetch a single event by its ID 
 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 First, install the dependencies:
 
