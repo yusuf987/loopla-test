@@ -49,6 +49,11 @@ GET /api/events/[id] → Fetch a single event by ID
 
 ## Screenshots
 
+### Homepage
 ![Homepage](./public/images/Screenshot-1.png)
-![Create Event Page](./public/screenshot2.png)
-![View Event Page](./public/screenshot3.png)
+
+### Create Event Page
+![Create Event Page](./public/images/screenshot-2.png)
+
+### View Event Page
+![View Event Page](./public/images/screenshot-3.png)
