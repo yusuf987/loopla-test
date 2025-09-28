@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { Event } from '../types/event';
 
-const DATA_PATH = path.join(process.cwd(), 'data', 'events.json');
+const DATA_PATH = path.join(process.cwd(), 'src', 'data', 'events.json');
 
 async function readFileSafe(): Promise<Event[]> {
   try {

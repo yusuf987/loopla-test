@@ -22,8 +22,6 @@ export default function CreatePage() {
   const [location, setLocation] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
-
-  // snackbar state
   const [successOpen, setSuccessOpen] = useState(false);
 
   function validate() {
@@ -139,7 +137,6 @@ export default function CreatePage() {
         </form>
       </Paper>
 
-      {/* Success Snackbar (top-right, dark green filled) */}
       <Snackbar
         open={successOpen}
         autoHideDuration={2000}

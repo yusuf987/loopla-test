@@ -23,9 +23,18 @@ export default function HomePage() {
       .then((data) => setEvents(data));
   }, []);
 
-  const shown = events
-    .filter((ev) => ev.title.toLowerCase().includes(query.toLowerCase()))
-    .sort((a, b) => a.title.length - b.title.length);
+ const sortedEvents = events
+  .filter((ev) => ev.title.toLowerCase().includes(query.toLowerCase()))
+  .sort((a, b) => {
+    // Sort by title length
+    const lenDiff = a.title.length - b.title.length;
+    if (lenDiff !== 0) return lenDiff;
+
+    // Sort by date
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateA - dateB; 
+  });
 
   return (
     <main style={{ maxWidth: 800, margin: "2rem auto" }}>
@@ -57,7 +66,7 @@ export default function HomePage() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {shown.map((ev) => (
+            {sortedEvents.map((ev) => (
               <TableRow key={ev.id} hover>
                 <TableCell>
                   <strong>{ev.title}</strong>

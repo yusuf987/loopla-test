@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-// src/pages/_app.tsx
 import type { AppProps } from "next/app";
 import { AppBar, Toolbar, Typography, Container } from "@mui/material";
 
