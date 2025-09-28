@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Morning Standup ☕",
+    "description": "Daily team sync",
+    "date": "2025-10-01T09:00:00.000Z",
+    "location": "REMOTE"
+  },
+  {
+    "id": "2",
+    "title": "Launch Party 🎉",
+    "description": "Product launch celebration",
+    "date": "2025-11-15T18:00:00.000Z",
+    "location": "LONDON"
+  }
+]

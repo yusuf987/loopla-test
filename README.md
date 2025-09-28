@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Loopla Event Management (Test Assessment)
 
-## Getting Started
+This is a small test assessment project built for event management.  
+The app lets you:
 
-First, run the development server:
+- Create an event ✍️
+- View all events 📋
+- Filter events by title 🔎
+- Fetch a single event by its ID 🆔
+
+
+---
+
+## 🚀 Getting Started
+
+First, install the dependencies:
 
 ```bash
+npm install
+```
+Then run the development server:
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now open http://localhost:3000 in your browser to see it running.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Next.js – React framework
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+React – UI library
 
-## Learn More
+Material UI (MUI) – for styling and components
 
-To learn more about Next.js, take a look at the following resources:
+TypeScript – for type safety
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## API Routes
 
-## Deploy on Vercel
+The project also provides a few simple API routes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GET /api/events → Fetch all events
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+POST /api/events → Create a new event
+
+GET /api/events/[id] → Fetch a single event by ID
+
+## Screenshots
+
+![Homepage](./public/images/Screenshot-1.png)
+![Create Event Page](./public/screenshot2.png)
+![View Event Page](./public/screenshot3.png)
